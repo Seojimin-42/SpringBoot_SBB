@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    <style>
+        .fieldError{
+            color : red
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-3"> <!-- 마진을 y방향으로 3만큼 -->
+        <h2 class="border-bottom py-2" th:text="${question.subject}">제목</h2>
+        <div class="card my-3 border-0" style="background-color: #f0f0f0;">
+            <div class="card-body">
+                <div class="card-text fs-5 fw-normal text-dark" th:text="${question.content}"></div>
+                <div class="d-flex justify-content-end mt-3">
+                      <span class="badge bg-dark text-white p-2">
+                        <div th:text="${#temporals.format(question.created, 'yyyy-MM-dd HH:mm')}"></div>
+                      </span>
+                </div>
+            </div>
+        </div>
+
+        <!--        <div class="card my-3">-->
+<!--            <div class="card-body">-->
+<!--                <div class="card-text" th:text="${question.content}"></div>-->
+<!--                <div class="d-flex justify-content-end">-->
+<!--                    <div class="badge bg-light text-dark p-2 text-start mx-3">-->
+<!--                        <div th:text="${#temporals.format(question.created, 'yyyy-MM-dd HH:mm')}"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <!--변수와 문자열을 같이 쓰고 싶으면 앞, 뒤에 ||을 적으면 됨.-->
+        <h5 class="border-bottom my-3 py-2" th:text="|${#lists.size(question.answerList)} 개의 답변이 있습니다.|"></h5>
+        <!-- 답변 내용  -->
+        <div class="card my-3" th:each="answer : ${question.answerList}">
+            <div class="card-body">
+                <div class="card-text" style="white-space: pre-line;" th:text="${answer.content}">답변 내용</div>
+                <div class="d-flex justify-content-end">
+                    <div class="badge bg-light text-dark p-2 text-start mx-3">
+                        <div th:text="${#temporals.format(answer.created, 'yyyy-MM-dd HH:mm')}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form class="my-3" th:action="@{|/answer/create/${question.id}|}" method="post" th:object="${answerDto}">
+            <textarea class="form-control" id="content" name="content" rows="8"></textarea>
+            <p th:if="${#fields.hasErrors('content')}" th:errors="*{content}" class="fieldError">Error</p>
+            <input class="btn btn-primary my-2" type="submit" value="답변 등록">
+        </form>
+    </div>
+</body>
+</html>

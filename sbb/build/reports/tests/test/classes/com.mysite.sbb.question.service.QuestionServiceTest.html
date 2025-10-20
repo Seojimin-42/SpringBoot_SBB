@@ -1,0 +1,2858 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - QuestionServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>QuestionServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.mysite.sbb.question.service.html">com.mysite.sbb.question.service</a> &gt; QuestionServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.150s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createTest()</td>
+<td class="success">1.150s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>19:16:54.185 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mysite.sbb.question.service.QuestionServiceTest]: QuestionServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:16:54.344 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mysite.sbb.SbbApplication for test class com.mysite.sbb.question.service.QuestionServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-10-17T19:16:54.759+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.q.service.QuestionServiceTest      : Starting QuestionServiceTest using Java 17.0.13 with PID 22836 (started by sjm11 in D:\SpringBoot\B_Ban\sbb)
+2025-10-17T19:16:54.762+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.q.service.QuestionServiceTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2025-10-17T19:16:55.792+09:00  INFO 22836 --- [SBB] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-17T19:16:55.861+09:00  INFO 22836 --- [SBB] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2025-10-17T19:16:56.512+09:00  INFO 22836 --- [SBB] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-17T19:16:56.595+09:00  INFO 22836 --- [SBB] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-17T19:16:56.624+09:00  INFO 22836 --- [SBB] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-17T19:16:56.917+09:00  INFO 22836 --- [SBB] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-17T19:16:56.955+09:00  INFO 22836 --- [SBB] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-17T19:16:57.067+09:00  INFO 22836 --- [SBB] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@378c48c1
+2025-10-17T19:16:57.067+09:00  INFO 22836 --- [SBB] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-17T19:16:57.133+09:00  INFO 22836 --- [SBB] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-17T19:16:57.900+09:00  INFO 22836 --- [SBB] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-17T19:16:57.965+09:00  INFO 22836 --- [SBB] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-17T19:16:58.505+09:00  INFO 22836 --- [SBB] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-10-17T19:16:59.039+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.q.service.QuestionServiceTest      : Started QuestionServiceTest in 4.565 seconds (process running for 5.652)
+2025-10-17T19:16:59.342+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목1, content=질문 내용1
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.417+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=608
+2025-10-17T19:16:59.417+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목2, content=질문 내용2
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.433+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=609
+2025-10-17T19:16:59.433+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목3, content=질문 내용3
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.436+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=610
+2025-10-17T19:16:59.436+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목4, content=질문 내용4
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.436+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=611
+2025-10-17T19:16:59.436+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목5, content=질문 내용5
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.442+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=612
+2025-10-17T19:16:59.442+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목6, content=질문 내용6
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.442+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=613
+2025-10-17T19:16:59.442+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목7, content=질문 내용7
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.442+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=614
+2025-10-17T19:16:59.442+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목8, content=질문 내용8
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.449+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=615
+2025-10-17T19:16:59.449+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목9, content=질문 내용9
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.453+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=616
+2025-10-17T19:16:59.453+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목10, content=질문 내용10
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.453+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=617
+2025-10-17T19:16:59.453+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목11, content=질문 내용11
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.457+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=618
+2025-10-17T19:16:59.457+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목12, content=질문 내용12
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.457+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=619
+2025-10-17T19:16:59.457+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목13, content=질문 내용13
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.466+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=620
+2025-10-17T19:16:59.466+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목14, content=질문 내용14
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.469+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=621
+2025-10-17T19:16:59.469+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목15, content=질문 내용15
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.469+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=622
+2025-10-17T19:16:59.469+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목16, content=질문 내용16
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.469+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=623
+2025-10-17T19:16:59.469+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목17, content=질문 내용17
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.469+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=624
+2025-10-17T19:16:59.469+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목18, content=질문 내용18
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.480+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=625
+2025-10-17T19:16:59.480+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목19, content=질문 내용19
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.480+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=626
+2025-10-17T19:16:59.480+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목20, content=질문 내용20
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.485+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=627
+2025-10-17T19:16:59.485+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목21, content=질문 내용21
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.486+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=628
+2025-10-17T19:16:59.486+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목22, content=질문 내용22
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.488+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=629
+2025-10-17T19:16:59.488+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목23, content=질문 내용23
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.488+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=630
+2025-10-17T19:16:59.488+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목24, content=질문 내용24
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.488+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=631
+2025-10-17T19:16:59.488+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목25, content=질문 내용25
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.495+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=632
+2025-10-17T19:16:59.495+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목26, content=질문 내용26
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.498+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=633
+2025-10-17T19:16:59.498+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목27, content=질문 내용27
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.499+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=634
+2025-10-17T19:16:59.499+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목28, content=질문 내용28
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.502+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=635
+2025-10-17T19:16:59.502+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목29, content=질문 내용29
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.504+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=636
+2025-10-17T19:16:59.504+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목30, content=질문 내용30
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.506+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=637
+2025-10-17T19:16:59.506+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목31, content=질문 내용31
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.506+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=638
+2025-10-17T19:16:59.506+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목32, content=질문 내용32
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.506+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=639
+2025-10-17T19:16:59.506+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목33, content=질문 내용33
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.512+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=640
+2025-10-17T19:16:59.512+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목34, content=질문 내용34
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.515+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=641
+2025-10-17T19:16:59.515+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목35, content=질문 내용35
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.516+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=642
+2025-10-17T19:16:59.516+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목36, content=질문 내용36
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.519+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=643
+2025-10-17T19:16:59.519+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목37, content=질문 내용37
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.521+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=644
+2025-10-17T19:16:59.521+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목38, content=질문 내용38
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.524+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=645
+2025-10-17T19:16:59.524+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목39, content=질문 내용39
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.526+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=646
+2025-10-17T19:16:59.526+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목40, content=질문 내용40
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.526+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=647
+2025-10-17T19:16:59.526+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목41, content=질문 내용41
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.529+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=648
+2025-10-17T19:16:59.529+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목42, content=질문 내용42
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.531+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=649
+2025-10-17T19:16:59.531+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목43, content=질문 내용43
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.533+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=650
+2025-10-17T19:16:59.533+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목44, content=질문 내용44
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.535+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=651
+2025-10-17T19:16:59.535+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목45, content=질문 내용45
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.535+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=652
+2025-10-17T19:16:59.535+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목46, content=질문 내용46
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.539+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=653
+2025-10-17T19:16:59.539+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목47, content=질문 내용47
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.542+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=654
+2025-10-17T19:16:59.542+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목48, content=질문 내용48
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.545+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=655
+2025-10-17T19:16:59.545+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목49, content=질문 내용49
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.547+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=656
+2025-10-17T19:16:59.547+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목50, content=질문 내용50
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=657
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목51, content=질문 내용51
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=658
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목52, content=질문 내용52
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=659
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목53, content=질문 내용53
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=660
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목54, content=질문 내용54
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=661
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목55, content=질문 내용55
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=662
+2025-10-17T19:16:59.549+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목56, content=질문 내용56
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.560+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=663
+2025-10-17T19:16:59.560+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목57, content=질문 내용57
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.562+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=664
+2025-10-17T19:16:59.562+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목58, content=질문 내용58
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.562+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=665
+2025-10-17T19:16:59.562+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목59, content=질문 내용59
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.566+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=666
+2025-10-17T19:16:59.566+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목60, content=질문 내용60
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.569+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=667
+2025-10-17T19:16:59.569+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목61, content=질문 내용61
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.569+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=668
+2025-10-17T19:16:59.569+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목62, content=질문 내용62
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.569+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=669
+2025-10-17T19:16:59.569+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목63, content=질문 내용63
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.576+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=670
+2025-10-17T19:16:59.576+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목64, content=질문 내용64
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.576+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=671
+2025-10-17T19:16:59.576+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목65, content=질문 내용65
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.576+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=672
+2025-10-17T19:16:59.576+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목66, content=질문 내용66
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.581+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=673
+2025-10-17T19:16:59.581+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목67, content=질문 내용67
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.581+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=674
+2025-10-17T19:16:59.581+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목68, content=질문 내용68
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.584+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=675
+2025-10-17T19:16:59.584+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목69, content=질문 내용69
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.587+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=676
+2025-10-17T19:16:59.587+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목70, content=질문 내용70
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.587+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=677
+2025-10-17T19:16:59.587+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목71, content=질문 내용71
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.587+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=678
+2025-10-17T19:16:59.587+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목72, content=질문 내용72
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.593+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=679
+2025-10-17T19:16:59.593+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목73, content=질문 내용73
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.593+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=680
+2025-10-17T19:16:59.593+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목74, content=질문 내용74
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.593+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=681
+2025-10-17T19:16:59.593+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목75, content=질문 내용75
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.599+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=682
+2025-10-17T19:16:59.599+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목76, content=질문 내용76
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.599+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=683
+2025-10-17T19:16:59.599+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목77, content=질문 내용77
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.604+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=684
+2025-10-17T19:16:59.604+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목78, content=질문 내용78
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.605+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=685
+2025-10-17T19:16:59.605+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목79, content=질문 내용79
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.609+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=686
+2025-10-17T19:16:59.609+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목80, content=질문 내용80
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.609+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=687
+2025-10-17T19:16:59.609+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목81, content=질문 내용81
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.613+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=688
+2025-10-17T19:16:59.613+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목82, content=질문 내용82
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.613+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=689
+2025-10-17T19:16:59.613+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목83, content=질문 내용83
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.617+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=690
+2025-10-17T19:16:59.617+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목84, content=질문 내용84
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.617+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=691
+2025-10-17T19:16:59.617+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목85, content=질문 내용85
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.617+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=692
+2025-10-17T19:16:59.617+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목86, content=질문 내용86
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.623+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=693
+2025-10-17T19:16:59.623+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목87, content=질문 내용87
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.623+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=694
+2025-10-17T19:16:59.623+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목88, content=질문 내용88
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.628+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=695
+2025-10-17T19:16:59.628+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목89, content=질문 내용89
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.628+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=696
+2025-10-17T19:16:59.628+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목90, content=질문 내용90
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.628+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=697
+2025-10-17T19:16:59.628+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목91, content=질문 내용91
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.635+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=698
+2025-10-17T19:16:59.635+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목92, content=질문 내용92
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.639+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=699
+2025-10-17T19:16:59.639+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목93, content=질문 내용93
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.639+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=700
+2025-10-17T19:16:59.639+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목94, content=질문 내용94
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.639+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=701
+2025-10-17T19:16:59.639+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목95, content=질문 내용95
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.647+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=702
+2025-10-17T19:16:59.647+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목96, content=질문 내용96
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.649+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=703
+2025-10-17T19:16:59.649+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목97, content=질문 내용97
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.649+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=704
+2025-10-17T19:16:59.649+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목98, content=질문 내용98
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.656+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=705
+2025-10-17T19:16:59.656+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목99, content=질문 내용99
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.656+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=706
+2025-10-17T19:16:59.656+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목100, content=질문 내용100
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.656+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=707
+2025-10-17T19:16:59.656+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목101, content=질문 내용101
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.656+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=708
+2025-10-17T19:16:59.656+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목102, content=질문 내용102
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.666+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=709
+2025-10-17T19:16:59.666+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목103, content=질문 내용103
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.670+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=710
+2025-10-17T19:16:59.670+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목104, content=질문 내용104
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.672+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=711
+2025-10-17T19:16:59.672+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목105, content=질문 내용105
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.675+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=712
+2025-10-17T19:16:59.675+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목106, content=질문 내용106
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.678+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=713
+2025-10-17T19:16:59.678+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목107, content=질문 내용107
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.682+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=714
+2025-10-17T19:16:59.682+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목108, content=질문 내용108
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.684+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=715
+2025-10-17T19:16:59.684+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목109, content=질문 내용109
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.687+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=716
+2025-10-17T19:16:59.687+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목110, content=질문 내용110
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.690+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=717
+2025-10-17T19:16:59.690+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목111, content=질문 내용111
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.692+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=718
+2025-10-17T19:16:59.692+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목112, content=질문 내용112
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.696+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=719
+2025-10-17T19:16:59.696+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목113, content=질문 내용113
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.696+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=720
+2025-10-17T19:16:59.696+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목114, content=질문 내용114
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.703+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=721
+2025-10-17T19:16:59.703+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목115, content=질문 내용115
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.706+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=722
+2025-10-17T19:16:59.706+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목116, content=질문 내용116
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.706+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=723
+2025-10-17T19:16:59.706+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목117, content=질문 내용117
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.706+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=724
+2025-10-17T19:16:59.706+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목118, content=질문 내용118
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.712+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=725
+2025-10-17T19:16:59.712+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목119, content=질문 내용119
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.715+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=726
+2025-10-17T19:16:59.715+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목120, content=질문 내용120
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.717+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=727
+2025-10-17T19:16:59.717+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목121, content=질문 내용121
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.717+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=728
+2025-10-17T19:16:59.717+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목122, content=질문 내용122
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.722+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=729
+2025-10-17T19:16:59.722+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목123, content=질문 내용123
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.722+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=730
+2025-10-17T19:16:59.722+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목124, content=질문 내용124
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.725+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=731
+2025-10-17T19:16:59.725+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목125, content=질문 내용125
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.727+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=732
+2025-10-17T19:16:59.727+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목126, content=질문 내용126
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.729+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=733
+2025-10-17T19:16:59.729+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목127, content=질문 내용127
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.731+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=734
+2025-10-17T19:16:59.731+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목128, content=질문 내용128
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.734+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=735
+2025-10-17T19:16:59.734+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목129, content=질문 내용129
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.736+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=736
+2025-10-17T19:16:59.736+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목130, content=질문 내용130
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.739+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=737
+2025-10-17T19:16:59.739+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목131, content=질문 내용131
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.739+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=738
+2025-10-17T19:16:59.739+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목132, content=질문 내용132
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.739+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=739
+2025-10-17T19:16:59.739+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목133, content=질문 내용133
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.745+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=740
+2025-10-17T19:16:59.745+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목134, content=질문 내용134
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.746+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=741
+2025-10-17T19:16:59.746+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목135, content=질문 내용135
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=742
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목136, content=질문 내용136
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=743
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목137, content=질문 내용137
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=744
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목138, content=질문 내용138
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=745
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목139, content=질문 내용139
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=746
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목140, content=질문 내용140
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=747
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목141, content=질문 내용141
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=748
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목142, content=질문 내용142
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=749
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목143, content=질문 내용143
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=750
+2025-10-17T19:16:59.748+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목144, content=질문 내용144
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.763+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=751
+2025-10-17T19:16:59.763+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목145, content=질문 내용145
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.766+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=752
+2025-10-17T19:16:59.766+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목146, content=질문 내용146
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.768+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=753
+2025-10-17T19:16:59.768+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목147, content=질문 내용147
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.771+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=754
+2025-10-17T19:16:59.771+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목148, content=질문 내용148
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.772+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=755
+2025-10-17T19:16:59.772+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목149, content=질문 내용149
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.772+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=756
+2025-10-17T19:16:59.772+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목150, content=질문 내용150
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.777+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=757
+2025-10-17T19:16:59.777+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목151, content=질문 내용151
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.777+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=758
+2025-10-17T19:16:59.777+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목152, content=질문 내용152
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.781+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=759
+2025-10-17T19:16:59.781+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목153, content=질문 내용153
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.781+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=760
+2025-10-17T19:16:59.781+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목154, content=질문 내용154
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.786+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=761
+2025-10-17T19:16:59.786+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목155, content=질문 내용155
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.786+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=762
+2025-10-17T19:16:59.786+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목156, content=질문 내용156
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.789+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=763
+2025-10-17T19:16:59.789+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목157, content=질문 내용157
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.792+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=764
+2025-10-17T19:16:59.792+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목158, content=질문 내용158
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.792+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=765
+2025-10-17T19:16:59.792+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목159, content=질문 내용159
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.792+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=766
+2025-10-17T19:16:59.792+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목160, content=질문 내용160
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.792+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=767
+2025-10-17T19:16:59.792+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목161, content=질문 내용161
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.799+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=768
+2025-10-17T19:16:59.799+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목162, content=질문 내용162
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.801+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=769
+2025-10-17T19:16:59.801+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목163, content=질문 내용163
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.801+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=770
+2025-10-17T19:16:59.801+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목164, content=질문 내용164
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.801+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=771
+2025-10-17T19:16:59.801+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목165, content=질문 내용165
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.806+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=772
+2025-10-17T19:16:59.806+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목166, content=질문 내용166
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.807+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=773
+2025-10-17T19:16:59.807+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목167, content=질문 내용167
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.807+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=774
+2025-10-17T19:16:59.807+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목168, content=질문 내용168
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.811+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=775
+2025-10-17T19:16:59.811+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목169, content=질문 내용169
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.811+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=776
+2025-10-17T19:16:59.811+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목170, content=질문 내용170
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.811+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=777
+2025-10-17T19:16:59.811+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목171, content=질문 내용171
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.817+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=778
+2025-10-17T19:16:59.817+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목172, content=질문 내용172
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.817+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=779
+2025-10-17T19:16:59.817+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목173, content=질문 내용173
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.817+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=780
+2025-10-17T19:16:59.817+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목174, content=질문 내용174
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.823+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=781
+2025-10-17T19:16:59.823+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목175, content=질문 내용175
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.823+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=782
+2025-10-17T19:16:59.823+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목176, content=질문 내용176
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.829+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=783
+2025-10-17T19:16:59.829+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목177, content=질문 내용177
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.832+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=784
+2025-10-17T19:16:59.832+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목178, content=질문 내용178
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.834+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=785
+2025-10-17T19:16:59.834+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목179, content=질문 내용179
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.837+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=786
+2025-10-17T19:16:59.837+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목180, content=질문 내용180
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.837+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=787
+2025-10-17T19:16:59.837+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목181, content=질문 내용181
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.837+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=788
+2025-10-17T19:16:59.837+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목182, content=질문 내용182
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.843+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=789
+2025-10-17T19:16:59.843+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목183, content=질문 내용183
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.845+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=790
+2025-10-17T19:16:59.845+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목184, content=질문 내용184
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=791
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목185, content=질문 내용185
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=792
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목186, content=질문 내용186
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=793
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목187, content=질문 내용187
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=794
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목188, content=질문 내용188
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=795
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목189, content=질문 내용189
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=796
+2025-10-17T19:16:59.848+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목190, content=질문 내용190
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.860+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=797
+2025-10-17T19:16:59.860+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목191, content=질문 내용191
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.860+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=798
+2025-10-17T19:16:59.860+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목192, content=질문 내용192
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.860+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=799
+2025-10-17T19:16:59.860+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목193, content=질문 내용193
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.866+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=800
+2025-10-17T19:16:59.866+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목194, content=질문 내용194
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.866+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=801
+2025-10-17T19:16:59.866+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목195, content=질문 내용195
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.872+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=802
+2025-10-17T19:16:59.872+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목196, content=질문 내용196
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.874+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=803
+2025-10-17T19:16:59.874+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목197, content=질문 내용197
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.877+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=804
+2025-10-17T19:16:59.877+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목198, content=질문 내용198
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.879+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=805
+2025-10-17T19:16:59.879+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목199, content=질문 내용199
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.881+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=806
+2025-10-17T19:16:59.881+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목200, content=질문 내용200
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.886+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=807
+2025-10-17T19:16:59.886+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목201, content=질문 내용201
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.888+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=808
+2025-10-17T19:16:59.888+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목202, content=질문 내용202
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.888+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=809
+2025-10-17T19:16:59.888+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목203, content=질문 내용203
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.888+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=810
+2025-10-17T19:16:59.888+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목204, content=질문 내용204
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.895+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=811
+2025-10-17T19:16:59.895+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목205, content=질문 내용205
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.904+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=812
+2025-10-17T19:16:59.904+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목206, content=질문 내용206
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.904+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=813
+2025-10-17T19:16:59.904+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목207, content=질문 내용207
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.908+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=814
+2025-10-17T19:16:59.908+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목208, content=질문 내용208
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.910+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=815
+2025-10-17T19:16:59.910+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목209, content=질문 내용209
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.913+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=816
+2025-10-17T19:16:59.913+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목210, content=질문 내용210
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.913+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=817
+2025-10-17T19:16:59.913+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목211, content=질문 내용211
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.913+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=818
+2025-10-17T19:16:59.913+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목212, content=질문 내용212
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.913+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=819
+2025-10-17T19:16:59.913+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목213, content=질문 내용213
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.920+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=820
+2025-10-17T19:16:59.920+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목214, content=질문 내용214
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.920+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=821
+2025-10-17T19:16:59.920+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목215, content=질문 내용215
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.924+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=822
+2025-10-17T19:16:59.924+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목216, content=질문 내용216
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.924+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=823
+2025-10-17T19:16:59.924+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목217, content=질문 내용217
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.924+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=824
+2025-10-17T19:16:59.924+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목218, content=질문 내용218
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=825
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목219, content=질문 내용219
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=826
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목220, content=질문 내용220
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=827
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목221, content=질문 내용221
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=828
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목222, content=질문 내용222
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=829
+2025-10-17T19:16:59.928+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목223, content=질문 내용223
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.936+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=830
+2025-10-17T19:16:59.936+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목224, content=질문 내용224
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.936+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=831
+2025-10-17T19:16:59.936+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목225, content=질문 내용225
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.944+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=832
+2025-10-17T19:16:59.944+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목226, content=질문 내용226
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.944+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=833
+2025-10-17T19:16:59.944+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목227, content=질문 내용227
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.949+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=834
+2025-10-17T19:16:59.949+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목228, content=질문 내용228
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.952+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=835
+2025-10-17T19:16:59.952+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목229, content=질문 내용229
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.952+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=836
+2025-10-17T19:16:59.952+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목230, content=질문 내용230
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.952+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=837
+2025-10-17T19:16:59.952+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목231, content=질문 내용231
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.952+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=838
+2025-10-17T19:16:59.952+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목232, content=질문 내용232
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.959+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=839
+2025-10-17T19:16:59.959+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목233, content=질문 내용233
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.959+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=840
+2025-10-17T19:16:59.959+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목234, content=질문 내용234
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.963+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=841
+2025-10-17T19:16:59.963+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목235, content=질문 내용235
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.963+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=842
+2025-10-17T19:16:59.963+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목236, content=질문 내용236
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.966+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=843
+2025-10-17T19:16:59.966+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목237, content=질문 내용237
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.966+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=844
+2025-10-17T19:16:59.966+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목238, content=질문 내용238
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.966+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=845
+2025-10-17T19:16:59.966+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목239, content=질문 내용239
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.972+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=846
+2025-10-17T19:16:59.972+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목240, content=질문 내용240
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.974+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=847
+2025-10-17T19:16:59.974+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목241, content=질문 내용241
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.976+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=848
+2025-10-17T19:16:59.976+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목242, content=질문 내용242
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.978+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=849
+2025-10-17T19:16:59.978+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목243, content=질문 내용243
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.980+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=850
+2025-10-17T19:16:59.980+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목244, content=질문 내용244
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.982+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=851
+2025-10-17T19:16:59.982+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목245, content=질문 내용245
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.984+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=852
+2025-10-17T19:16:59.984+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목246, content=질문 내용246
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.986+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=853
+2025-10-17T19:16:59.986+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목247, content=질문 내용247
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.986+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=854
+2025-10-17T19:16:59.986+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목248, content=질문 내용248
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.986+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=855
+2025-10-17T19:16:59.986+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목249, content=질문 내용249
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.994+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=856
+2025-10-17T19:16:59.994+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목250, content=질문 내용250
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.994+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=857
+2025-10-17T19:16:59.994+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목251, content=질문 내용251
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:16:59.994+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=858
+2025-10-17T19:16:59.994+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목252, content=질문 내용252
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.003+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=859
+2025-10-17T19:17:00.003+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목253, content=질문 내용253
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.005+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=860
+2025-10-17T19:17:00.005+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목254, content=질문 내용254
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.007+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=861
+2025-10-17T19:17:00.007+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목255, content=질문 내용255
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.009+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=862
+2025-10-17T19:17:00.009+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목256, content=질문 내용256
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.013+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=863
+2025-10-17T19:17:00.013+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목257, content=질문 내용257
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.013+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=864
+2025-10-17T19:17:00.013+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목258, content=질문 내용258
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.019+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=865
+2025-10-17T19:17:00.019+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목259, content=질문 내용259
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.019+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=866
+2025-10-17T19:17:00.019+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목260, content=질문 내용260
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.023+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=867
+2025-10-17T19:17:00.023+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목261, content=질문 내용261
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.025+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=868
+2025-10-17T19:17:00.025+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목262, content=질문 내용262
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.028+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=869
+2025-10-17T19:17:00.028+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목263, content=질문 내용263
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.028+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=870
+2025-10-17T19:17:00.028+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목264, content=질문 내용264
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.028+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=871
+2025-10-17T19:17:00.028+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목265, content=질문 내용265
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.028+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=872
+2025-10-17T19:17:00.028+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목266, content=질문 내용266
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.038+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=873
+2025-10-17T19:17:00.038+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목267, content=질문 내용267
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.041+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=874
+2025-10-17T19:17:00.041+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목268, content=질문 내용268
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.043+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=875
+2025-10-17T19:17:00.043+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목269, content=질문 내용269
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.043+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=876
+2025-10-17T19:17:00.043+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목270, content=질문 내용270
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.047+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=877
+2025-10-17T19:17:00.047+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목271, content=질문 내용271
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.050+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=878
+2025-10-17T19:17:00.050+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목272, content=질문 내용272
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.052+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=879
+2025-10-17T19:17:00.052+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목273, content=질문 내용273
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.052+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=880
+2025-10-17T19:17:00.052+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목274, content=질문 내용274
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.052+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=881
+2025-10-17T19:17:00.052+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목275, content=질문 내용275
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.058+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=882
+2025-10-17T19:17:00.058+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목276, content=질문 내용276
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.058+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=883
+2025-10-17T19:17:00.058+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목277, content=질문 내용277
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.061+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=884
+2025-10-17T19:17:00.061+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목278, content=질문 내용278
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.061+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=885
+2025-10-17T19:17:00.061+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목279, content=질문 내용279
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=886
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목280, content=질문 내용280
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=887
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목281, content=질문 내용281
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=888
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목282, content=질문 내용282
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=889
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목283, content=질문 내용283
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=890
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목284, content=질문 내용284
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=891
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목285, content=질문 내용285
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=892
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목286, content=질문 내용286
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=893
+2025-10-17T19:17:00.066+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목287, content=질문 내용287
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.076+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=894
+2025-10-17T19:17:00.076+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목288, content=질문 내용288
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.076+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=895
+2025-10-17T19:17:00.076+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목289, content=질문 내용289
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.079+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=896
+2025-10-17T19:17:00.079+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목290, content=질문 내용290
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.079+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=897
+2025-10-17T19:17:00.079+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목291, content=질문 내용291
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.082+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=898
+2025-10-17T19:17:00.082+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목292, content=질문 내용292
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.082+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=899
+2025-10-17T19:17:00.082+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목293, content=질문 내용293
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.085+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=900
+2025-10-17T19:17:00.085+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목294, content=질문 내용294
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.086+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=901
+2025-10-17T19:17:00.086+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목295, content=질문 내용295
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.087+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=902
+2025-10-17T19:17:00.087+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목296, content=질문 내용296
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.087+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=903
+2025-10-17T19:17:00.087+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목297, content=질문 내용297
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.087+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=904
+2025-10-17T19:17:00.087+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목298, content=질문 내용298
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.091+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=905
+2025-10-17T19:17:00.091+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목299, content=질문 내용299
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.092+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=906
+2025-10-17T19:17:00.092+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ➡️ create() 호출됨: subject=질문 제목300, content=질문 내용300
+Hibernate: 
+    insert 
+    into
+        question
+        (content, created, subject) 
+    values
+        (?, ?, ?)
+2025-10-17T19:17:00.095+09:00  INFO 22836 --- [SBB] [    Test worker] c.m.s.question.service.QuestionService   : ✅ save() 완료: id=907
+Hibernate: 
+    select
+        q1_0.question_id,
+        q1_0.content,
+        q1_0.created,
+        q1_0.subject 
+    from
+        question q1_0 
+    order by
+        q1_0.created desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        count(q1_0.question_id) 
+    from
+        question q1_0
+========= 리스트 갯수 : 10
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at 2025. 10. 17. 오후 7:17:00</p>
+</div>
+</div>
+</body>
+</html>
