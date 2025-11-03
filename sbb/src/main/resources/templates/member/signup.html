@@ -2,6 +2,15 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layouts/layout}">
+
+<th:block layout:fragment="css">
+    <style>
+        .fieldError{
+            color : red
+        }
+    </style>
+</th:block>
+
 <div layout:fragment="content" class="container my-3">
     <div class="my-3 border-bottom">
         <div><h4>회원가입</h4></div>
@@ -77,4 +86,16 @@
         <button type="submit" class="btn btn-primary">회원가입</button>
     </form>
 </div>
+
+<th:block layout:fragment="script">
+    <script th:inline="javascript">
+        $(function(){
+            let errorMessage = [[${errorMessage}]]
+            if(errorMessage != null){
+                alert(errorMessage);
+            }
+        })
+    </script>
+</th:block>
+
 </html>
